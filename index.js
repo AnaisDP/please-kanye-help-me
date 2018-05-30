@@ -130,11 +130,27 @@ fs.readFile(filePath, function(err, data) {
 })
 
 // Q16. Give me at least 3 memorable websites that engage to continue (because of nice UX/UI)
+Airbnb : https://www.airbnb.fr
+All trattorias pages from Big mamma group : https://www.bigmammagroup.com/fr/trattorias/pink-mamma
+Spotify : https://www.spotify.com/fr/
 
-// Q17. Describe an ESILV project you worked on that you’re proud of?
+//Q17. Describe an ESILV project you worked on that you’re proud of?
+/* My first "big" C# program, in first year. I had to create a console project that reads all characters from a book 
+(the book was given in .txt if I remember correctly) and displays how many words are there in the whole book.
+I displayed a nice, colored console interface with a menu and multiple books to choose, and a clean console output of 
+the result with a "try again" option. I was proud of it because it was my first program, my first try at coding and
+it work out very well.*/
 
 // Q18. Describe an ESILV project that you worked on that you’re not so proud of?
+/* All web app projects from la fourchette until the end ! I had to focus a lot other projects (especially PI2), I lost track of time 
+and couldn't fully appreciate my work on J$. */
 
 // Q19. What are some things you like about the developer tools you use?
+/* I use quite common tools but I'd say the things I like the most is that they are easy to use/to understand with a nice UX,
+ and well documented online, or at least that they have a big community behind.*/
 
 // Q20. Last question: could you explain me - in your terms - why I decided to focus on Javascript Ecosystem for the Web Architecture(s) course?
+/* I would say because it is the most popular programming language in the world (obviously, since it's web language),
+also because it is a very powerfull language especially when it's associated with tools, it can really make a difference.
+Then i'd also say that it's not a fully appreciated language since people usually feel it is too complicated, so more people
+will be eager to work on the HTML/CSS instead of the JS and that's where the full stack engineer can make a difference. */
