@@ -1,12 +1,16 @@
 // Q1. Create a variable called `kanye` and assign it the string 'please kanye, help me'
+var kanye = 'please kanye, help me';
 
 // Q2. Use the variable `artist` to create a new variable called `genious` that is assigned the string "Is Kanye West a musical genius?"
 const artist = 'Kanye West';
+
+var genious = 'Is ' + artist + ' a musical genius?';
 
 // Q3  Make an object called `family` and give it the following properties:
 // family has been `married` on 2014 (Number)
 // family is not presidentOfTheUnitedStates (boolean)
 // family has `children` called North, Saint and Chicago (array of strings)
+var family = {married : 2014, presidentOfTheUnitedStates : false, children : ['North','Saint','Chicago']};
 
 // Q4. Change the `brand` shoes to "adidas" using dot notation
 const shoes = {
@@ -14,10 +18,14 @@ const shoes = {
   'brand': 'nike'
 };
 
+shoes.brand = 'adidas';
+
 // Q5. Change the `model` yeezy to "Super Moon Yellow" using square bracket notation
 const yeezy = {
   'model': '350'
 };
+
+yeezy['model'] = 'Super Moon Yellow';
 
 // Q6. Create an object call "discography"
 // The key should be the album name and the value the release year
@@ -27,26 +35,41 @@ const yeezy = {
 // * Graduation (2007)
 // * 808s & Heartbreak (2008)
 // * My Beautiful Dark Twisted Fantasy (2010)
+var discography = {The College Dropout : 2004, Late Registration : 2005, Graduation : 2006, 808s & Heartbreak : 2008, My Beautiful Dark Twisted Fantasy : 2010};
 
 // Q7. Return a new array from `stronger` with all item in uppercase
 const stronger = ['Work it', 'make it', 'do it', 'makes us', 'Harder', 'better', 'faster', 'stronger'];
+
+var strongerUpper = String.prototype.toUpperCase.apply(stronger).split(',');
 
 // Q8. Using this array do the following
 const friends = ['jayz', 'rihanna', 'kidcudi'];
 
 // 1. add 'drake' to the end of `friends` array
+friends.push('drake');
 
 // 2. remove 'jayz' and store him in a variable called firstFriend
+var firstFriend = friends.shift();
 
 // 3. add 'pusha-t' to the start of `friends` array
+friends.unshift('pusha-t');
 
 // 4. remove 'rihanna' from the array and store him in a variable called secondFriend
+var secondFriend = friends.splice(1,1);
 
 // 5. leave 'kidcudi' in the array but put a copy of him on a variable called thirdFriend
-
+var thirdFriend = friends.slice(1,2);
 
 // Q9. Write the function `duplicate` that return the expected result
 console.log(duplicate(['let', 'the', 'suicide', 'doors', 'up']));
+
+const duplicate = function (array) {
+  var clone = array.slice();
+  for (var i = 0; i < clone.length; i++) {
+    array.push(i);
+  }
+  return array;
+};
 // ❯ ['let', 'the', 'suicide', 'doors', 'up', 'let', 'the', 'suicide', 'doors', 'up']
 
 
