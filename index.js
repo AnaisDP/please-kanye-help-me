@@ -89,9 +89,9 @@ const chorus = ['He lost his soul to a woman so ', 'How could you be so ', 'Oh, 
 console.log(heartless(chorus));
  // ❯ ['He lost his soul to a woman so heartless', 'How could you be so heartless', 'Oh, how could you be so heartless'];
 
-
 // Q11. Related to the https://genius.com/search?q=kanye%20west link
 // What's the query selector to get all lyrics cards.
+body > routable-page > ng-outlet > search-results-page > div > div.column_layout > div.column_layout-column_span.column_layout-column_span--primary > div:nth-child(3) > search-result-section > div
 
 // Q12. Related to https://genius.com/search?q=kanye%20west link
 // List all api requests urls with their http action verbs.
